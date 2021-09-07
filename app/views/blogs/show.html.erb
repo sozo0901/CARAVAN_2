@@ -38,47 +38,25 @@
     <section class="blog-box">
       <h3 class="blog-box-heading">
         <!-- title部分 下で変更します -->
-        Hopeful lessons from the battle to save rainforests
+        <%= @blog.title %>
         <!-- title部分 ここまで -->
       </h3>
       <div class="blog-box-content">
         <p class="category">
           <!-- category部分 下で変更します -->
-          Nature
+          <%= @blog.category %>
           <!-- category部分 ここまで -->
         </p>
         <p class="blog-date">
           <!-- created_at部分 下で変更します -->
-          June 19, 2017
+          <%= @blog.created_at %>
           <!-- created_at部分 ここまで -->
         </p>
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
       <p class="single-text">
         <!-- body部分 下で変更します -->
-        The environment of rain forests is ideal for plants: An estimated<br>
-        two-thirds of the world's plant species grow in the rain forest.<br>
-        Plants in the rain forest grow very close together and contend<br>
-        with the constant threat of insect predators. They have adapted<br>
-        by making chemicals that researchers have found useful as<br>
-        medicines. Bioprospecting, or going into the rain forest in search<br>
-        of plants that can be used in foods, cosmetics, and medicines,<br>
-        has become big business during the past decade, and the amount<br>
-        that native communities are compensated for this varies from<br>
-        almost nothing to a share in later profits.<br><br>
-
-        The National Cancer Institute (NCI) estimates that 70 percent<br>
-        of the anti-cancer plants identified so far are rain forest plants.<br>
-        A new drug under development by a private pharmaceutical<br>
-        company, possibly for treating HIV, is Calanolide A, which is<br>
-        derived from a tree discovered on Borneo, according to<br><br>
-
-        Many trees and plants, like orchids, have been removed from<br>
-        the rain forest and cultivated. Brazil nut trees are one valuable<br>
-        tree that refuses to grow anywhere but in undisturbed sections<br>
-        of the Amazon rain forest. There, it is pollinated by bees that<br>
-        also visit orchids, and its seeds are spread by the agouti,<br>
-        a small tree mammal.
+        <%= @blog.body %>
         <!-- body部分 ここまで -->
       </p>
       <a href="#">編集</a>
