@@ -1,7 +1,7 @@
 class Blog < ApplicationRecord
 
-  valideates :title, presence: true
-  valideates :category, presence: true
-  valideates :body, presence: true
+  validates :title, presence: true
+  validates :category, presence: true
+  validates :body, presence: true
 
 end
