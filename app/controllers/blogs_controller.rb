@@ -3,10 +3,10 @@ class BlogsController < ApplicationController
   end
 
   def show
-    @blog = Blog.new
   end
 
   def new
+    @blog = Blog.new
   end
 
   def create
