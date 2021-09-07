@@ -61,7 +61,8 @@
       </p>
       <!-- <a href="#">編集</a> を削除し、以下コードに変更 -->
       <%= link_to "編集", edit_blog_path(@blog) %>
-      <a href="#">削除</a>
+      <!-- <a href="#">削除</a> を削除し、以下コードに変更 -->
+      <%= link_to "削除", blog_path(@blog), method: :delete %>
       <div class="author-case">
         <div class="author-image"></div>
         <div class="author-box">
